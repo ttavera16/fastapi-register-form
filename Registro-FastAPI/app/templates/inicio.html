@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio</title>
+    <style>
+    input[type=submit] {
+  width: auto;
+  background-color: #2b82ec;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  align-content: center;
+}    
+    input[type=submit]:hover {
+  background-color: #45a049;
+  
+}
+
+h2 {
+  color: rgb(30, 59, 173);
+  font-family: verdana;
+}
+
+label {
+  color: rgb(0, 0, 0);
+  font-size: 20px;  
+  font-family: verdana;
+}
+
+.form-box {
+  width: 600px;
+  border: 15px solid rgb(189, 234, 249);
+  padding: 50px;
+  margin: 20px auto;
+
+}
+
+
+</style>
+</head>
+<body>
+    <div class="form-box">
+    <h2>Seleccione el tipo de usuario que desea registrar</h2>
+
+    <form action="/seleccionar_formulario" method="post">
+        <input type="radio" id="estudiante" name="tipo_usuario" value="estudiante" required>
+        <label for="estudiante">Registrar Estudiante</label><br>
+
+        <input type="radio" id="docente" name="tipo_usuario" value="docente">
+        <label for="docente">Registrar Docente</label><br><br>
+
+        <input type="submit" value="Continuar">
+    </form>
+
+    <img src="{{ url_for('static', path='/img/icono-est.png') }}" alt="Icono" style="float: right; margin-top: -150px; width: 150px;">
+
+    </div>
+</body>
+</html>
