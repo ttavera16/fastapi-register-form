@@ -18,8 +18,8 @@ Cada formulario permite ingresar información personal como:
 
 Los datos enviados se guardan en la base de datos.
 Luego de registrar la información, la aplicación muestra un mensaje de éxito.
-**
-Estructura básica**
+
+**Estructura básica**
 
 El proyecto está organizado en una carpeta app/ con:
 
@@ -35,7 +35,3 @@ core/ → configuración de la base de datos
 
 
 
-
-**
-Treisi Tavera**
-Estudiante de Analítica y Ciencia de Datos — ITLA
